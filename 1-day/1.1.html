@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  const xhr=new XMLHttpRequest()
+  xhr.open("post",'https://testsk.open.com.cn/api/teacher/teacher-space-service/taskCatalogs/examines');
+  xhr.setRequestHeader('authorization', 'Bearer f72517d4-4c54-43ea-8ff0-23f03a5f215a');
+  xhr.setRequestHeader('cookie',"__utmz=121244685.1568785010.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); b_t_s_100200=3927d5fc-cd21-4e3c-9237-cdef06ecd2c6; up_first_date=2019-10-12; up_beacon_uni_id_100200=99999; zg_did=%7B%22did%22%3A%20%2216dc92d88277a7-0b851667c34e75-67e1b3f-1fa400-16dc92d8828b3c%22%7D; __utmc=121244685; checked=true; XSKJ-expires_in=7199; JSKJ-teacherId=undefined; JSKJ-academyName=undefined; account=csadmin; academyLogo=https://oescdn.open.com.cn/testyf/PI/DATA/2019/0906/PIrkqaiDATA20190906155634701.png?Expires=3144556593&OSSAccessKeyId=81kgc0VJPbZ4WnpN&Signature=YZtyaSWEZLWsIVLM57Ggz6WGqVU%253D; gkjf-structId=11; gkjf-profile=%257BproductId%253A5%2CstructId%253A11%257D; gkjxgl-profile=%257BproductId%253A2%2CstructId%253A11%257D; themeColor=primary; __utma=121244685.311295421.1568785010.1573695339.1573805223.13; JSKJ-schoolRoleId=31; JSKJ-Admin-Struct=%257BproductId%253A7%2CroleId%253A31%257D; re_ticket=3e411a60-bd94-47fa-a9e7-27f74ff23a27; isOnlyBusiness=true; productIds=[{%22product%22:{%22id%22:1%2C%22name%22:%22%E9%A2%84%E6%8A%A5%E5%90%8D%E7%B3%BB%E7%BB%9F%22%2C%22code%22:%22preenroll-service%22%2C%22remark%22:%22%E9%A2%84%E6%8A%A5%E5%90%8D%E7%B3%BB%E7%BB%9F%22}}%2C{%22product%22:{%22id%22:5%2C%22name%22:%22%E8%B4%A2%E5%8A%A1%E7%B3%BB%E7%BB%9F%22%2C%22code%22:%22payment-service%22%2C%22remark%22:%22%E8%B4%A2%E5%8A%A1%E7%B3%BB%E7%BB%9F%22}}%2C{%22product%22:{%22id%22:2%2C%22name%22:%22%E6%95%99%E5%AD%A6%E7%AE%A1%E7%90%86%22%2C%22code%22:%22teach-manage-service%22%2C%22remark%22:%22%E6%95%99%E5%AD%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%22}}]; academyId=11; academyCode=650; gkjxgl-structId=11; isOnlyRole=false; ticket=d5b65ac8-bb1d-4267-88c7-a0419a181411; expires_in=71999; login_timeStamp=1574387113301; XSKJ-re_ticket=c32efa9e-0a39-45eb-b017-a3bf1ee3e6df; academyName=%E6%96%B0%E7%96%86%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E5%A4%A7%E5%AD%A6; XSKJ-academyId=11; XSKJ-Admin-Struct=%257BproductId%253A6%2CstudentId%253A12546%257D; zg_æ­¤å¤\u0084å¡«å\u0086\u0099æ\u0082¨å\u009c¨è¯¸è\u0091\u009bç\u0094³è¯·ç\u009a\u0084App Key=%7B%22sid%22%3A%201574390536272%2C%22updated%22%3A%201574390835598%2C%22info%22%3A%201574299412770%2C%22superProperty%22%3A%20%22%7B%5C%22%E5%BA%94%E7%94%A8%E5%90%8D%E7%A7%B0%5C%22%3A%20%5C%22%E8%AF%B8%E8%91%9Bio%5C%22%7D%22%2C%22platform%22%3A%20%22%7B%7D%22%2C%22utm%22%3A%20%22%7B%7D%22%2C%22referrerDomain%22%3A%20%22testsk.open.com.cn%22%2C%22zs%22%3A%200%2C%22sc%22%3A%200%2C%22firstScreen%22%3A%201574390536272%2C%22landHref%22%3A%20%22https%3A%2F%2Ftestsk.open.com.cn%2Fgkjxgl%2F%23%2FCourseinFormationManage%22%7D; XSKJ-login_timeStamp=1574408014755; username=pancaie; pwd=pancaie; JSKJ-re_ticket=05bb8980-b017-42bf-a389-92325926f39c; JSKJ-productId=7; JSKJ-academyId=11; JSKJ-ticket=5a527aac-993e-4678-a0da-56c60045c238; JSKJ-login_timeStamp=1574415762548; JSKJ-expires_in=7032; JSKJ-isOnlyRole=false; _fmdata=QqpdfItveeFTm53l%2B0CQczLpbyy5r6%2FohKWUVwm1dE7Bbi6QrDvb269MMQOg7L8bUecVzUGEqLP%2FLOYF4axyzkzVCgeKMfsvEPYPyZc%2BMwI%3D")
+  xhr.setRequestHeader('open-teacher-space-profile', '%7BproductId%3A7,roleId%3A31%7D');
+  xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+  xhr.setRequestHeader('authorization', 'Bearer f72517d4-4c54-43ea-8ff0-23f03a5f215a');
+
+  xhr.send();
+  // xhr.send(JSON.stringify({jsonData: _data}));
+  // xhr.send();
+  // clearInterval(this.spaceTimer)
+  xhr.onreadystatechange = () =>{
+    if(xhr.readyState == 4&&xhr.status == 200){
+      const data = xhr.responseText;
+      // setSignIn(1)
+      // console.log(data)
+    }
+  }
+</script>
+</body>
+</html>
