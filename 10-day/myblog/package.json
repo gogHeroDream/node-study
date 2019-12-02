@@ -1,0 +1,14 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "''\u001b[学习node\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D初\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[2~\u001b[2~学习node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "宋鹏",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
