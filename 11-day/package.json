@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test",
+    "covers": "istanbul cover node_modules/mocha/bin/_mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.7.2",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "config-lite": "^2.1.0",

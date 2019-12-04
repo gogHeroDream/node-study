@@ -13,7 +13,7 @@ router.get('/', checkNotLogin, function (req, res, next) {
 // POST /signin 用户登录
 router.post('/', checkNotLogin, function (req, res, next) {
   const name = req.fields.name
-  console.log(req, req.fields)
+  // console.log(req, req.fields)
   const password = req.fields.password
 
   // 校验参数

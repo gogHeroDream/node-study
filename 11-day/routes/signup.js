@@ -20,7 +20,7 @@ router.post('/', checkNotLogin, function (req, res, next) {
     const avatar = req.files.avatar.path.split(path.sep).pop()
     let password = req.fields.password
     const repassword = req.fields.repassword
-
+    // console.log(1)
     // 校验参数
     try {
         if (!(name.length >= 1 && name.length <= 10)) {
@@ -41,9 +41,20 @@ router.post('/', checkNotLogin, function (req, res, next) {
         if (password !== repassword) {
             throw new Error('两次输入密码不一致')
         }
+        // console.log(2)
     } catch (e) {
+        // console.log(3)
         // 注册失败，异步删除上传的头像
-        fs.unlink(req.files.avatar.path)
+        // console.log(req.files.avatar.path)
+        // fs.unlink(req.files.avatar.path)
+        fs.unlink(req.files.avatar.path, (err) => {
+            if(err) {
+                console.log(err);
+                return false;
+            } else {
+                console.log("删除成功！");
+            }
+        })
         req.flash('error', e.message)
         return res.redirect('/signup')
     }
